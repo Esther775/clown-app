@@ -1,0 +1,22 @@
+get http://localhost:3000/bookings
+
+###
+#show booking:
+
+get http://localhost:3000/bookings/2
+
+###
+#create booking:
+post http://localhost:3000/bookings
+Content-Type: application/json
+
+{
+  "clown_id": 2,
+  "user_id": 1,
+  "price": 500,
+  "event": "wedding"
+}
+
+###
+#users create:
+post http://localhost:3000/users
